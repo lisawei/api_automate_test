@@ -3,7 +3,7 @@ api_automate_test
 
 python api automate test
 
-
+```
 
 import random
 import unittest
@@ -30,3 +30,4 @@ class TestApiFunctions(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+```
