@@ -8,17 +8,17 @@ class TestApiFunctions(unittest.TestCase):
         self.seq = range(10)
 
     def test_not_null(self):
-        data = RequestApi.get_json('/book/subject/1220562', {'alt': 'json'})
+        data = RequestApi.get_json('/book/subject/1220562', {'alt': 'json'}, host="api.douban.com")
         self.assertIsNotNone(data)
 
     def test_title_required(self):
-        data = RequestApi.get_json('/book/subject/1220562', {'alt': 'json'})
+        data = RequestApi.get_json('/book/subject/1220562', {'alt': 'json'}, host="api.douban.com")
         self.assertIsNotNone(data)
         self.assertIsNotNone(data["title"])
 
     def test_sample(self):
         data = RequestApi.get_json('/book/subject/1220562', {'alt': 'json'})
-        #self.assertIsNone(data)
+        self.assertIsNone(data)
 
 
 if __name__ == '__main__':
