@@ -22,4 +22,21 @@ class TestApiFunctions(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    tf = TestApiFunctions()
+    tf.setUp()
+    tf2 = TestApiFunctions()
+    tf2.setUp()
+
+
+
+
+
+
+
+
+
+
+
+
+    tf.run()
+    #unittest.main()
